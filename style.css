@@ -43,6 +43,7 @@ body {
     background-attachment: fixed;
 }
 
+/*bagian fronthome box 1 */
 
 .FrontHomeBox {
     margin-top: 20px;
@@ -58,23 +59,23 @@ body {
     border: 1px solid rgba(15, 18, 52, 0.3);
 }
 
-/*bagian Font heading dlem home */
+/*bagian Font heading dlem frontboxhome */
 .FrontHome h2 {
     color: #c23196;
 }
-/* styling warna font*/
+
 .FrontHome {
     color: #ffffff;
     padding: 50px;
     text-align: left;
 }
-/*Bagian paragraf*/
+
 .FrontHome p{
     text-align: left;
     font-size: smaller;
     padding: 9px 20px;
 }
-/* styling buttonnya */
+
 .buton {
     align-items: center;
     font-size: 15px;
@@ -95,6 +96,8 @@ body {
     transform: scale(1.05);
 }
  
+
+
 /*Bagian headline*/
 .headline{
     margin-top: 30px;
@@ -162,7 +165,7 @@ body {
     transform: scale(1.1);
 }
 
-/*box isian video*/
+/*box gambar tengah isian gambar dan video*/
 
 .boxtengah {
     padding: 20px 30px;
@@ -195,6 +198,8 @@ body {
     max-width: 300px;
 }
 
+
+/*box gambar deskripsi*/
 .boxgambardesc {
     margin: 50px auto;
     width: 100%;
@@ -203,24 +208,29 @@ body {
     gap: 30px;
     align-items: center;
     padding: 20px;
-    background: rgba(15, 18, 52, 0.21);
+    background: rgba(15, 18, 52, 0.51);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(15, 18, 52, 0.3);
+    border: 1px solid rgba(15, 18, 52, 0.475);
 }
 .desckanan {
     color: #ffffff;
 }
 
-.leftgambar img {
+.leftgambar h2{
+    text-align: center;
+    color: #ffffff;
+}
+
+.kirigambar img {
     padding: 20px;
     width: 90%;
     height: auto;
 }
 
-.leftgambar, .desckanan {
+.kirigambar, .desckanan {
     flex: 1;
 }
 
