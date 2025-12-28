@@ -50,6 +50,12 @@ body {
     max-width: 600px;
     min-height: 350px;
     padding: 20px;
+    background: rgba(15, 18, 52, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(15, 18, 52, 0.3);
 }
 
 /*bagian Font heading dlem home */
@@ -156,9 +162,9 @@ body {
     transform: scale(1.1);
 }
 
-/*image craousel*/
+/*box isian video*/
 
-.boxcraousel {
+.boxtengah {
     padding: 20px 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -169,7 +175,7 @@ body {
    background-color: #060412cb;
 }
 
-.craousel {
+.listtengah {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -178,15 +184,44 @@ body {
     margin-bottom: 20px;
 }
 
-.craouselimage {
+.isian {
     color: #ffffff;
     text-align: center;
 
 }
 
-.craouselimage img {
+.isian img {
     width: 100%;
     max-width: 300px;
+}
+
+.boxgambardesc {
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+    background: rgba(15, 18, 52, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(15, 18, 52, 0.3);
+}
+.desckanan {
+    color: #ffffff;
+}
+
+.leftgambar img {
+    padding: 20px;
+    width: 90%;
+    height: auto;
+}
+
+.leftgambar, .desckanan {
+    flex: 1;
 }
 
 /*about us description*/
@@ -234,6 +269,9 @@ footer {
     }
     .FrontHome h1 {
         font-size: 30px;  
+    }
+    .leftgambar, .desckanan {
+    min-width: 300px;
     }
 }
 
