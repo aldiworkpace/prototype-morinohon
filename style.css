@@ -45,15 +45,11 @@ body {
 
 
 .FrontHomeBox {
+    margin-top: 20px;
     width: 90%;
     max-width: 600px;
+    min-height: 350px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.26);
-    border-radius: 13px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.4px);
-    -webkit-backdrop-filter: blur(4.4px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /*bagian Font heading dlem home */
@@ -92,6 +88,21 @@ body {
     color: #0f0f0f;
     transform: scale(1.05);
 }
+ 
+/*Bagian headline*/
+.headline{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 20px 20px;
+}
+
+.isi {
+    padding: 40px;
+    text-align: left;
+    color: #ffffff;
+
+}
+
 /* Card Box */
 .CardBox {
     margin-bottom: 100px;
