@@ -22,7 +22,7 @@ nav a {
     text-decoration: none;
 }
 
-/*nav animasi*/
+/*nav pseudo class animasi*/
 nav:has(a:hover) a:not(:hover){
     filter: blur(2px);
     color: #f2f2f2;
