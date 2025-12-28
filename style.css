@@ -56,17 +56,17 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/*bagian Front dlem home */
+/*bagian Font heading dlem home */
 .FrontHome h2 {
     color: #c23196;
 }
-
+/* styling warna font*/
 .FrontHome {
     color: #ffffff;
     padding: 50px;
     text-align: left;
 }
-
+/*Bagian paragraf*/
 .FrontHome p{
     text-align: left;
     font-size: smaller;
