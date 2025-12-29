@@ -8,11 +8,10 @@
 
 /*nav*/
 nav {
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    display: flex;            
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;       
 }
 
 nav a {
@@ -20,6 +19,51 @@ nav a {
     color: #f2f2f2;
     padding: 14px 30px;
     text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.boxlogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxlogo img{
+    height: 40px;
+    width: auto;
+}
+
+.menusamping {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #2910674b;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(5px);
+    gap: 10px;
+}
+
+.menusamping li{
+    width: 100%;
+    margin-top: 10px;
+}
+.menusamping a{
+    width: 100%;
 }
 
 /*nav pseudo class animasi*/
@@ -272,6 +316,7 @@ buton:active {
     color: #ffffff;
     font-weight: bolder;
     font-size: 16px;
+    margin-bottom: 50px;
 }
 
 .ctabutton:hover {
@@ -310,10 +355,8 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    nav {
-        gap: 0%;
-        font-size: 20px;
-        padding: 0.3rem 0.5rem;
+    .hilangmenu {
+        display: none;
     }
     .FrontHome {
         padding: 20px;
