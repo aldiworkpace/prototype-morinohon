@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 
-/*nav*/
+/*nav header dan logo*/
 nav {
     display: flex;            
     justify-content: space-between;
@@ -76,6 +76,11 @@ nav a:hover{
     transform: scale(1.1);
     transition: 200ms;
     letter-spacing: 1px;
+}
+
+li img:hover{
+    transform: scale(1.2) rotate(4deg);
+    transition: 10ms ease-in-out;
 }
 
 /*Background body*/
