@@ -369,6 +369,10 @@ footer {
     .FrontHome h1 {
         font-size: 30px;  
     }
+   .headline {
+    font-size: 13px;
+   }
+
     .leftgambar, .desckanan {
     min-width: 300px;
     }
