@@ -38,10 +38,12 @@ nav ul {
 .boxlogo {
     display: flex;
     align-items: center;
+    font-size: 30px;
+    font-family: 'Bagianhome';
     gap: 10px;
 }
 
-.boxlogo img{
+.boxlogo {
     height: 40px;
     width: auto;
 }
@@ -383,7 +385,7 @@ footer {
         margin-top: 50px; 
     }
     .FrontHome h1 {
-        font-size: 30px;  
+        font-size: 40px;  
     }
    .headline {
     font-size: 13px;
