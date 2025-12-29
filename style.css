@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'BagianHome';  src: url('font/Caster_PERSONAL_USE_ONLY.ttf');
+}
+
 /*nav header dan logo*/
 nav {
     display: flex;            
@@ -112,9 +116,15 @@ body {
 
 /*bagian Font heading dlem frontboxhome */
 .FrontHome h2 {
-    color: #c23196;
+    font-size: medium;
+    color: #ffffff;
+    letter-spacing: 6px;
 }
-
+.FrontHome h1 {
+    color: #ffffff;
+    font-family: 'Bagianhome', cursive;
+    font-size: 60px;
+}
 .FrontHome {
     color: #ffffff;
     padding: 50px;
@@ -231,7 +241,7 @@ buton:active {
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
-    border-radius: 30px 5px;
+    border-radius: 50px 5px;
     color: #ffffff;
     margin-bottom: 100px;
    background-color: #060412cb;
@@ -257,6 +267,44 @@ buton:active {
     border-radius: 10px;
 }
 
+/*cta*/
+.cta {
+    padding: 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.ctalist {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.ctabutton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 300px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 2px solid #fffffffb;
+    transition: ease-in-out 0.3s;
+    background-color: rgba(21, 21, 77, 0.714);
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+/*Nyoba*/
+
+.ctabutton:hover {
+    transform: scale(1.2) rotate(10deg);
+    background-color: #441689;
+    color: white;
+}
 
 /*box gambar deskripsi*/
 .boxgambardesc {
@@ -292,43 +340,6 @@ buton:active {
     flex: 1;
 }
 
-/*cta*/
-.cta {
-    padding: 20px;
-    margin-bottom: 30px;
-    color: #ffffff;
-    text-align: center;
-}
-
-.ctalist {
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-/* From Uiverse.io by felipesntr */ 
-.ctabutton {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 300px;
-    padding: 10px 15px;
-    text-decoration: none;
-    border: 2px solid #fffffffb;
-    transition: ease-in-out 0.3s;
-    background-color: rgba(21, 21, 77, 0.714);
-    color: #ffffff;
-    font-weight: bolder;
-    font-size: 16px;
-    margin-bottom: 50px;
-}
-
-.ctabutton:hover {
-    transform: scale(1.2) rotate(10deg);
-    background-color: #441689;
-    color: white;
-}
 
 /*about us description*/
 .Descripsion {
