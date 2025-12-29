@@ -365,16 +365,17 @@ buton:active {
 }
 
 form  {
-    min-width: 330px;
     align-items: center;
     display: flex;
     flex-direction: column;
     text-align: center;
     color: #ffffff;
     gap: 25px;
+    width: 320px;
     padding: 25px 30px;
+    margin-bottom: 50px;
     background: rgba(255, 255, 255, 0.25);
-    border-radius: 16px;
+    border-radius: 13px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(19.2px);
     -webkit-backdrop-filter: blur(19.2px);
@@ -384,14 +385,16 @@ form a{
     color: #ffffff;
     font-size: 16px;
     gap: 30px;
+    text-decoration: none;
 }
 
 .submit {
     width: 100%;
     height: 100%;
     padding: 10px 25px;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: #441689;
+    color: #ffffff;
     border: 0;
     transition: 100ms;
 }
@@ -425,6 +428,15 @@ form a{
     transition: 100ms;
 }
 
+.loginatas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
 /*pseudo animasi*/
 .password:hover{
     transform: scale(1.1);
@@ -440,8 +452,12 @@ form a{
     transform: scale(1.1) rotate(0.3deg);
     background-color: #f2f2f2;
     letter-spacing: 1.3;
+    color: black;
+    border: #354ea8;
+    border: 1;
 }
-/*buat footer bawah*/
+
+/*footer bawah*/
 
 footer {
     padding: 30px 20px;
@@ -464,6 +480,9 @@ footer {
     .hilangmenu {
         display: none;
     }
+    .boxlogo {
+        padding: 0;
+    }
     .FrontHome {
         padding: 20px;
     }
@@ -481,6 +500,10 @@ footer {
 
     .leftgambar, .desckanan {
     min-width: 300px;
+    }
+    
+    form {
+        width: 310px;
     }
 }
 
