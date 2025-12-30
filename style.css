@@ -91,7 +91,7 @@ li img:hover{
 
 /*Background body*/
 body {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/download\ \(5\).gif);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('images/download\ \(6\).gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -364,24 +364,24 @@ buton:active {
     padding: 25px 35px;
 }
 
-form  {
+.loginform  {
     align-items: center;
     display: flex;
     flex-direction: column;
     text-align: center;
     color: #ffffff;
     gap: 25px;
-    width: 320px;
+    width: 360px;
     padding: 25px 30px;
     margin-bottom: 50px;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(156, 164, 205, 0.388);
     border-radius: 13px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 11px 15px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(19.2px);
     -webkit-backdrop-filter: blur(19.2px);
     border: 1px solid rgba(255, 255, 255, 0.98);
 }
-form a{
+.loginform a{
     color: #ffffff;
     font-size: 16px;
     gap: 30px;
@@ -397,6 +397,7 @@ form a{
     color: #ffffff;
     border: 0;
     transition: 100ms;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .email {
@@ -407,6 +408,7 @@ form a{
     background: #ffffff;
     border: 0;
     transition: 100ms;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.5);
 }
 .password {
     width: 100%;
@@ -416,6 +418,7 @@ form a{
     border: 0;
     background: #ffffff;
     transition: 100ms;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .username {
@@ -426,6 +429,7 @@ form a{
     border: 0;
     background: #ffffff;
     transition: 100ms;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .loginatas {
@@ -435,6 +439,12 @@ form a{
     justify-content: center;
     color: #ffffff;
     margin-bottom: 10px;
+}
+
+.loginatas h1{
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-bottom: 9px;
 }
 
 /*pseudo animasi*/
@@ -457,6 +467,60 @@ form a{
     border: 1;
 }
 
+/*box form pinjam buku transaksi*/
+.Boxtransaksi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.kiritransaksi {
+    color: #ffffff;
+    color: #ffffff;
+    min-height: 400px;
+    gap: 25px;
+    width: 500px;
+    padding: 25px 30px;
+    box-shadow: 11px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(19.2px);
+    -webkit-backdrop-filter: blur(19.2px);
+}
+
+.kanantransaksi {
+    color: #ffffff;
+    min-height: 400px;
+    gap: 25px;
+    width: 500px;
+    padding: 25px 30px;
+    box-shadow: 11px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(19.2px);
+    -webkit-backdrop-filter: blur(19.2px);
+}
+
+.trans {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+}
+
+.inputan {
+    display: flex;
+    justify-content: center;
+}
+
+.anggotainputan {
+    flex-direction: column;
+    width: 30px;
+}
+
+.inputan, .anggotainputan {
+    flex: 1;
+}
 /*footer bawah*/
 
 footer {
@@ -468,8 +532,8 @@ footer {
     color: #ffffff;
     text-align: center;
     font-weight: bolder;
-    background: rgba(163, 246, 237, 0.32);
-    border-radius: 11px;
+    background: rgba(133, 140, 177, 0.32);
+    border-radius: 7px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -480,9 +544,11 @@ footer {
     .hilangmenu {
         display: none;
     }
+    
     .boxlogo {
         padding: 0;
     }
+    
     .FrontHome {
         padding: 20px;
     }
@@ -494,16 +560,31 @@ footer {
     .FrontHome h1 {
         font-size: 40px;  
     }
-   .headline {
+   
+    .headline {
     font-size: 13px;
    }
 
+   /*home bagian desc pake gambar*/
     .leftgambar, .desckanan {
     min-width: 300px;
     }
-    
-    form {
+
+    /*login form*/
+    .loginform {
         width: 310px;
+    }
+    .loginatas h1{
+        font-size: 23px;
+        margin-bottom: 0;
+    }
+     /*form transaksi*/
+    .boxtransaksi {
+        width: 300px;
+    }
+    .anggotainputan {
+        display: flex;
+        flex-direction: column;
     }
 }
 
