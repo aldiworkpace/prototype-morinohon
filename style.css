@@ -122,7 +122,7 @@ body {
 .FrontHome h1 {
     color: #ffffff;
     font-family: 'Bagianhome', cursive;
-    font-size: 60px;
+    font-size: 50px;
 }
 .FrontHome {
     color: #ffffff;
@@ -131,7 +131,7 @@ body {
 
 .FrontHome p{
     text-align: left;
-    font-size: smaller;
+    font-size: 16px;
     padding: 9px 20px;
     margin-bottom: 30px;
 }
@@ -222,6 +222,17 @@ buton:active {
     object-fit: cover;
 }
 
+.cardlevelbuton {
+    text-decoration: none;
+    background-color: #441689;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    width: 30px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 100ms;
+}
+
 /*pseudo class card Animasi*/
 .CardList:has(.card:hover) .card:not(:hover) {
     filter: blur(5px);
@@ -231,6 +242,13 @@ buton:active {
 .card:hover {
     transform: scale(1.1);
     transition: 200ms;
+}
+
+.cardlevelbuton:hover {
+    background-color: #ffffff;
+    color: #441689;
+    letter-spacing: 1px;
+    transform: scale(1.1);
 }
 
 /*box gambar tengah isian gambar dan video*/
@@ -473,6 +491,7 @@ buton:active {
     padding: 20px;
     min-height: 100vh;
     margin-bottom: 50px;
+    
 }
 
 .kiritransaksi {
@@ -482,13 +501,9 @@ buton:active {
     width: 500px;
     padding: 25px 30px;
     border-radius: 15px 60px ;
-    background: rgba(139, 140, 147, 0.192);
-    border-radius: 15px 60px ;
-    box-shadow: 11px 15px rgba(0, 0, 0, 0.47);
-    backdrop-filter: blur(19.2px);
-    -webkit-backdrop-filter: blur(19.2px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('images/download\ \(7\).gif');
 }
-
+/*form transaksi pinjam buku*/
 .kanantransaksi {
     color: #ffffff;
     min-height: 400px;
@@ -497,11 +512,11 @@ buton:active {
     gap: 30px;
     width: 500px;
     padding: 25px 30px;
-    background: rgba(139, 140, 147, 0.192);
+   background: rgba(31, 8, 53, 0.392);
     border-radius: 15px 60px ;
     box-shadow: 11px 15px rgba(0, 0, 0, 0.47);
-    backdrop-filter: blur(19.2px);
-    -webkit-backdrop-filter: blur(19.2px);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(10.2px);
 }
 
 .inputtrans {
@@ -510,6 +525,9 @@ buton:active {
     padding: 10px 25px;
     border: none;
     transition: 100ms;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
 }
 
 .inputnama {
@@ -518,6 +536,20 @@ buton:active {
     padding: 10px 25px;
     border-radius: 20px;
     border: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.dateinput {
+    border-radius: 5px;
+    max-width: 200px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
 }
 .inputan {
     display: flex;
@@ -532,14 +564,6 @@ buton:active {
 .inputan, .anggotainputan {
     gap: 6px;
     flex: 1;
-}
-
-.dateinput {
-    border-radius: 5px;
-    max-width: 200px;
-    width: 100%;
-    padding: 10px 20px;
-    border: none;
 }
 
 .butoninput {
@@ -566,6 +590,10 @@ buton:active {
     transition: 180ms;
 }
 
+option {
+    color: black;
+}
+
 /*Animasi buton pseudo class*/
 .butoninput:hover {
     transform: scale(1.1);
@@ -587,13 +615,17 @@ buton:active {
 
 /*buat animasi inputan form*/
 .inputnama:hover {
-  transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 black
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+    background-color: #ffffff;
+    color: black;
 }
 
 .inputtrans:hover{
-  transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 black
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+    background-color: #ffffff;
+    color: black;
 }
 
 
@@ -603,7 +635,6 @@ footer {
     padding: 30px 20px;
     width: 100%;
     height: auto;
-    justify-content: center;
     align-items: center;
     color: #ffffff;
     text-align: center;
@@ -672,6 +703,9 @@ footer h2{
     .anggotainputan {
         display: flex;
         flex-direction: column;
+    }
+    .kiritransaksi {
+        display: none;
     }
 }
 
