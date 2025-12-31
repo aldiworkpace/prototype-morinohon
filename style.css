@@ -34,14 +34,14 @@ nav ul {
     gap: 30px;
     align-items: center;
 }
-
+/*logo*/
 .boxlogo {
     display: flex;
     gap: 10px;
 }
 
 .boxlogo img{
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
@@ -88,7 +88,7 @@ li img:hover{
 
 /*Background body*/
 body {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('images/download\ \(6\).gif');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/download\ \(6\).gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -472,16 +472,19 @@ buton:active {
     flex-wrap: wrap;
     padding: 20px;
     min-height: 100vh;
+    margin-bottom: 50px;
 }
 
 .kiritransaksi {
     color: #ffffff;
-    color: #ffffff;
-    min-height: 400px;
+    min-height: 487px;
     gap: 25px;
     width: 500px;
     padding: 25px 30px;
-    box-shadow: 11px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px 60px ;
+    background: rgba(139, 140, 147, 0.192);
+    border-radius: 15px 60px ;
+    box-shadow: 11px 15px rgba(0, 0, 0, 0.47);
     backdrop-filter: blur(19.2px);
     -webkit-backdrop-filter: blur(19.2px);
 }
@@ -494,26 +497,27 @@ buton:active {
     gap: 30px;
     width: 500px;
     padding: 25px 30px;
-    box-shadow: 11px 15px rgba(0, 0, 0, 0.5);
+    background: rgba(139, 140, 147, 0.192);
+    border-radius: 15px 60px ;
+    box-shadow: 11px 15px rgba(0, 0, 0, 0.47);
     backdrop-filter: blur(19.2px);
     -webkit-backdrop-filter: blur(19.2px);
 }
 
 .inputtrans {
     border-radius: 20px;
-    max-width: 320px;
     width: 100%;
     padding: 10px 25px;
     border: none;
+    transition: 100ms;
 }
 
 .inputnama {
-    max-width: 320px;
+    max-width: 300px;
     width: 100%;
     padding: 10px 25px;
     border-radius: 20px;
     border: 0;
-    background: #ffffff;
 }
 .inputan {
     display: flex;
@@ -528,6 +532,68 @@ buton:active {
 .inputan, .anggotainputan {
     gap: 6px;
     flex: 1;
+}
+
+.dateinput {
+    border-radius: 5px;
+    max-width: 200px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+}
+
+.butoninput {
+    width: 80px;
+    padding: 7px;
+    border-radius: 7px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #441689;
+    border: none;
+    font-weight: bold;
+    transition: 180ms;
+}
+
+.butonreset {
+    width: 80px;
+    padding: 7px;
+    border-radius: 7px;
+    text-align: center;
+    color: #441689;
+    background-color: #ffffff;
+    border: none;
+    font-weight: bold;
+    transition: 180ms;
+}
+
+/*Animasi buton pseudo class*/
+.butoninput:hover {
+    transform: scale(1.1);
+    letter-spacing: 1.5px;
+    color: black;
+    width: 90px;
+    background-color: white;
+    box-shadow: 1px 1px 15px #441689;
+}
+
+.butonreset:hover {
+    transform: scale(1.1);
+    letter-spacing: 1.5px;
+    color: rgb(255, 255, 255);
+    width: 90px;
+    background-color: #441689;
+    box-shadow: 1px 1px 15px #441689;
+}
+
+/*buat animasi inputan form*/
+.inputnama:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black
+}
+
+.inputtrans:hover{
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black
 }
 
 
@@ -548,6 +614,11 @@ footer {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(163, 246, 237, 0.3);  
+}
+
+footer h2{
+    font-family: 'Bagianhome';
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 600px) {

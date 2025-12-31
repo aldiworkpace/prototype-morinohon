@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-     <!--Nav-->
+     <!--Nav dengan logo tag img dan ul dan li-->
     <header>
         <nav>
             <a href="#atas" class="boxlogo">
@@ -15,7 +15,7 @@
             </a>
             <ul>
                 <li><a href="index.html" class="hilangmenu">HOME</a></li>
-                <li><a href="transaction.html" class="hilangmenu">BORROW A BOOK</a></li>
+                <li><a href="transaction.html" class="hilangmenu">BORROW BOOK</a></li>
                 <li><a href="login.html" class="hilangmenu">LOGIN</a></li>
                 <li><a href="Profile.html" class="hilangmenu">PROFILE</a></li>
                 <li onclick=bukamenu()><a href="#"><img src="svg/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="open menu"></a></li>
@@ -23,13 +23,14 @@
             <ul class="menusamping">
                 <li onclick=sembunyimenu()><a href="#"><img src="svg/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="close"></a></li>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="transaction.html">BORROW A BOOK</a></li>
+                <li><a href="transaction.html">BORROW BOOK</a></li>
                 <li><a href="login.html">LOGIN</a></li>
                 <li><a href="Profile.html">PROFILE</a></li>
             </ul>
         </nav>
     </header>
 
+    <!--Bagian Form Transaksi-->
     <main>
         <section class="formtransaksi">
             <div class="Boxtransaksi">
@@ -41,15 +42,15 @@
                 
                 <div class="kanantransaksi">
                     <form class="transaksi">
-                    <h2>Pinjam Buku</h2>    
+                    <h2>Borrow Book</h2>    
                     <p> Isi Form Berikut jika anda ingin meminjam Buku</p>
                     <div class="inputan">   
                         <div class="anggotainputan">
-                            <label for=" name"> Masukan nama </label><br>
+                            <label for=" name"> Masukan nama </label>
                             <input class="inputnama" type="text" name="name" placeholder=" name ">    
                         </div>
                         <div class="anggotainputan">
-                            <label for=" email "> email </label><br>
+                            <label for=" email "> email </label>
                             <input class="inputnama" type="email" name="email" placeholder=" email ">    
                         </div>
                     </div>     
@@ -65,28 +66,37 @@
                             <option>Pendidikan</option>
                             <option>Refrensi</option>
                         </select>
+
+                        <label for=" jumlah buku"> Jumlah Buku </label><br>
+                        <select class="inputtrans" name="Jumlah Buku" >
+                            <option value="" disabled selected hidden>Pilih jumlah buku....</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
                         
                         <label for="telepon"> No Hp </label><br>
                         <input class="inputtrans" type="tel" name="telepon" placeholder=" Masukan No telefon ">
                          
                         <div class="inputan">   
                             <div class="anggotainputan">
-                                <label for="Tanggalpinjam"> Tanggal pinjam </label><br>
-                                <input type="date" name=" Tanggal pinjam ">    
+                                <label for="Tanggalpinjam"> Tanggal pinjam </label>
+                                <input class="dateinput" type="date" name=" Tanggal pinjam ">    
                             </div>
                             <div class="anggotainputan">
-                                <label for="Tanggalkembali"> Tanggal Kembali </label><br>
-                                <input type="date" name=" Tanggal Kembali ">    
+                                <label for="Tanggalkembali"> Tanggal Kembali </label>
+                                <input class="dateinput" type="date" name=" Tanggal Kembali ">    
                             </div>
                         </div>  
                         
                         <input class="checkbox" type="checkbox" value="Remember Me"> i Agree all Privacy policy<br>
                         <div class="inputan">   
                             <div class="anggotainputan">
-                                <input type="submit" name="submit" value=" Submit " >    
+                                <input class="butoninput" type="submit" name="submit" value=" Submit " >    
                             </div>
                             <div class="anggotainputan">
-                                <input type="reset" name="Reset" value=" Reset ">    
+                                <input class="butonreset" type="reset" name="Reset" value=" Reset ">    
                             </div>
                         </div>  
                     </form>
@@ -96,10 +106,10 @@
         </section>
     </main>
 
-
-
+    <!--bagian Footer-->
     <footer>
-       <p>&copy; Aldi Rizki</p>
+        <p>&copy;</p> <h2> Mori no Hon</h2>
+
     </footer>
 
     <script src="script/script.js"></script>
