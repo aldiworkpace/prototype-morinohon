@@ -37,13 +37,10 @@ nav ul {
 
 .boxlogo {
     display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Bagianhome';
     gap: 10px;
 }
 
-.boxlogo {
+.boxlogo img{
     height: 40px;
     width: auto;
 }
@@ -354,7 +351,7 @@ buton:active {
 }
 
 /*Login form*/
-.boxform {
+.boxformlogin {
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -432,7 +429,7 @@ buton:active {
     box-shadow: 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-.loginatas {
+.headingloginatas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -441,7 +438,7 @@ buton:active {
     margin-bottom: 10px;
 }
 
-.loginatas h1{
+.headingloginatas h1{
     letter-spacing: 5px;
     font-size: 30px;
     margin-bottom: 9px;
@@ -492,7 +489,9 @@ buton:active {
 .kanantransaksi {
     color: #ffffff;
     min-height: 400px;
-    gap: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     width: 500px;
     padding: 25px 30px;
     box-shadow: 11px 15px rgba(0, 0, 0, 0.5);
@@ -500,15 +499,22 @@ buton:active {
     -webkit-backdrop-filter: blur(19.2px);
 }
 
-.trans {
-    display: flex;
-    justify-content: space-between;
+.inputtrans {
     border-radius: 20px;
+    max-width: 320px;
     width: 100%;
-    height: 30px;
+    padding: 10px 25px;
     border: none;
 }
 
+.inputnama {
+    max-width: 320px;
+    width: 100%;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 0;
+    background: #ffffff;
+}
 .inputan {
     display: flex;
     justify-content: center;
@@ -520,8 +526,11 @@ buton:active {
 }
 
 .inputan, .anggotainputan {
+    gap: 6px;
     flex: 1;
 }
+
+
 /*footer bawah*/
 
 footer {
@@ -542,14 +551,16 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    /*sembunyikan menu*/
     .hilangmenu {
         display: none;
     }
     
+    /*logo atas*/
     .boxlogo {
         padding: 0;
     }
-    
+    /*front home box*/
     .FrontHome {
         padding: 20px;
     }
@@ -572,6 +583,10 @@ footer {
     }
 
     /*login form*/
+    .headingloginatas h1{
+        letter-spacing: 3px;
+        font-size: 27px;
+    }
     .loginform {
         width: 310px;
     }
