@@ -221,6 +221,7 @@ buton:active {
     backdrop-filter: blur(3.2px);
     -webkit-backdrop-filter: blur(3.2px);
     border: 1px solid rgba(221, 115, 165, 0.28);
+    transition: 1000ms;
 }
 
 .card img {
@@ -636,6 +637,95 @@ option {
     background-color: #ffffff;
     color: black;
 }
+
+
+
+
+/*Bagian headline katalog*/
+.headlineKatalog{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 20px 20px;
+}
+
+.isiKatalog {
+    padding: 40px;
+    text-align: left;
+    color: #ffffff;
+
+}
+
+/* Card Box Katalog buku*/
+.CardBoxKatalog {
+    margin-bottom: 100px;
+}
+.CardBoxKatalog h2{
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    padding:6px 100px;
+}
+/*card lisnya */
+
+.CardListKatalog {
+    gap: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+/*background card dengan font*/
+
+.book {
+    max-width: 300px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px 5px;
+    color: #ffffff;
+    background: rgba(163, 115, 221, 0.311);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(3.2px);
+    border: 1px solid rgba(221, 115, 165, 0.28);
+    transition: 1000ms;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.bookbuton {
+    text-decoration: none;
+    background-color: #441689;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    width: 30px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 100ms;
+}
+
+/*pseudo class card Animasi*/
+.CardListKatalog:has(.book:hover) .book:not(:hover) {
+    filter: blur(5px);
+    transform: scale(.9, .9);
+}
+
+.book:hover {
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.bookbuton:hover {
+    background-color: #ffffff;
+    color: #441689;
+    letter-spacing: 1px;
+    transform: scale(1.1);
+}
+
 
 /*profile*/
 
