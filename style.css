@@ -10,6 +10,14 @@
     font-family: 'BagianHome';  src: url('font/Caster_PERSONAL_USE_ONLY.ttf');
 }
 
+@font-face {
+    font-family: 'BagianStats';  src: url('font/LowresPixel-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Bagian2'; src: url('font/PixelPurl.ttf');
+}
+
 /*nav header dan logo*/
 nav {
     display: flex;            
@@ -88,7 +96,7 @@ li img:hover{
 
 /*Background body*/
 body {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/download\ \(6\).gif');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/download\ \(6\).gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -502,6 +510,7 @@ buton:active {
     padding: 25px 30px;
     border-radius: 15px 60px ;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('images/download\ \(7\).gif');
+    box-shadow: 11px 15px rgba(0, 0, 0, 0.47);
 }
 /*form transaksi pinjam buku*/
 .kanantransaksi {
@@ -628,6 +637,126 @@ option {
     color: black;
 }
 
+/*profile*/
+
+.boxprofilecard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    min-height: 100vh;
+    margin-bottom: 50px;
+    
+}
+
+.profilecardkanan {
+    min-height: 300px;
+    font-weight: bolder;
+    color: #ffffff;
+    height: 100px;
+}
+.profilecardkanan h1{
+    font-family: 'Bagian2';
+}
+.profilecardkiri{
+   display: flex;
+   justify-content: center;
+}
+
+
+.profilecardkiri img{
+    border-radius: 20px;
+    min-height: 200px;
+    height: 300px;
+}
+
+.profilecardkiri, .profilecardkanan {
+    flex: 1;
+}
+
+/*stats skill*/
+.skillstats {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.boxlevel {
+    max-width: 320px;
+    border: #ffffff 1px solid;
+    border-radius: 20px;
+    background: rgba(156, 164, 205, 0.104);
+    border-radius: 13px;
+    box-shadow: 9px 9px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(19.2px);
+    -webkit-backdrop-filter: blur(19.2px);
+    border: 1px solid rgba(255, 255, 255, 0.98);
+}
+
+.level {
+    font-family: 'BagianStats';
+    border-radius: 20px;
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    width: 90%;
+    background-color: #441689;
+    transition: 1000ms;
+}
+.xp {
+    font-family: 'BagianStats';
+    border-radius: 20px;
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    width: 90%;
+    background-color: #d55200;
+    transition: 1000ms;
+}
+.hp {
+     font-family: 'BagianStats';
+    border-radius: 20px;
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    width: 60%;
+    background-color: #ae0000;
+    transition: 1000ms;
+}
+
+.mp {
+     font-family: 'BagianStats';
+    border-radius: 20px;
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    width: 80%;
+    background-color: #033f78;
+    transition: 1000ms;
+}
+
+.mp:hover {
+    width: 100%;
+}
+
+.hp:hover {
+    width: 100%;
+}
+
+.xp:hover {
+    width: 100%;
+}
+
+.level:hover {
+    width: 100%;
+}
+
+
+
 
 /*footer bawah*/
 
@@ -676,7 +805,7 @@ footer h2{
     }
    
     .headline {
-    font-size: 13px;
+    font-size: 17px;
    }
 
    /*home bagian desc pake gambar*/
@@ -706,6 +835,16 @@ footer h2{
     }
     .kiritransaksi {
         display: none;
+    }
+
+    /*bagian profil*/
+    .profilecardkiri{
+        margin-top: 80px;
+    }
+
+    .profilecardkanan {
+        padding: 20px;
+        margin-top: 0px;
     }
 }
 
