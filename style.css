@@ -640,30 +640,49 @@ option {
 
 
 
-
-/*Bagian headline katalog*/
-.headlineKatalog{
-    margin-top: 30px;
-    margin-bottom: 15px;
-    padding: 20px 20px;
-}
-
-.isiKatalog {
-    padding: 40px;
-    text-align: left;
-    color: #ffffff;
-
-}
-
 /* Card Box Katalog buku*/
+.bookatas {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.bookatasbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.bookkananitem {
+    display: flex;
+    justify-content: center;
+}
+
+.bookkananitem img{
+    border-radius: 20px;
+    height: 300px;
+}
+
+.bookkiriitem {
+
+}
+
+.bookkiriitem, .bookkananitem {
+    flex: 1;
+}
+
+
 .CardBoxKatalog {
     margin-bottom: 100px;
 }
+
 .CardBoxKatalog h2{
     text-align: center;
     font-weight: bold;
     color: #ffffff;
-    padding:6px 100px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Bagian2';
 }
 /*card lisnya */
 
@@ -680,13 +699,12 @@ option {
     max-width: 300px;
     width: 100%;
     padding: 20px;
-    border-radius: 30px 5px;
+    border-radius: 10px;
     color: #ffffff;
-    background: rgba(163, 115, 221, 0.311);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(34, 5, 69, 0.612);
+    box-shadow: 7px 10px rgb(0, 0, 0);
     backdrop-filter: blur(3.2px);
     -webkit-backdrop-filter: blur(3.2px);
-    border: 1px solid rgba(221, 115, 165, 0.28);
     transition: 1000ms;
 }
 
@@ -709,15 +727,6 @@ option {
 }
 
 /*pseudo class card Animasi*/
-.CardListKatalog:has(.book:hover) .book:not(:hover) {
-    filter: blur(5px);
-    transform: scale(.9, .9);
-}
-
-.book:hover {
-    transform: scale(1.1);
-    transition: 200ms;
-}
 
 .bookbuton:hover {
     background-color: #ffffff;
