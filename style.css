@@ -490,7 +490,7 @@ buton:active {
     border: #354ea8;
     border: 1;
 }
-
+/*Form Pinjam buku*/
 /*box form pinjam buku transaksi*/
 .Boxtransaksi {
     display: flex;
@@ -502,7 +502,7 @@ buton:active {
     margin-bottom: 50px;
     
 }
-
+/*update user transaksi pinjam */
 .kiritransaksi {
     color: #ffffff;
     min-height: 487px;
@@ -513,7 +513,7 @@ buton:active {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('images/download\ \(7\).gif');
     box-shadow: 11px 15px rgba(0, 0, 0, 0.47);
 }
-/*form transaksi pinjam buku*/
+/*form transaksi pinjam buku input*/
 .kanantransaksi {
     color: #ffffff;
     min-height: 400px;
@@ -564,6 +564,7 @@ buton:active {
 .inputan {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .anggotainputan {
@@ -576,6 +577,32 @@ buton:active {
     flex: 1;
 }
 
+/*buat form update*/
+.butoninputupdate {
+    width: 80px;
+    padding: 7px;
+    border-radius: 7px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0b5d7a;
+    border: none;
+    font-weight: bold;
+    transition: 180ms;
+}
+
+.butonresetupdate {
+    width: 80px;
+    padding: 7px;
+    border-radius: 7px;
+    text-align: center;
+    color: #0b5d7a;
+    background-color: #ffffff;
+    border: none;
+    font-weight: bold;
+    transition: 180ms;
+}
+
+/*buat form input pinjam*/
 .butoninput {
     width: 80px;
     padding: 7px;
@@ -605,6 +632,27 @@ option {
 }
 
 /*Animasi buton pseudo class*/
+.butoninputupdate:hover {
+    transform: scale(1.1);
+    letter-spacing: 1.5px;
+    color: black;
+    width: 90px;
+    background-color: white;
+    box-shadow: 1px 1px 15px #0b5d7a;
+}
+
+.butonresetupdate:hover {
+    transform: scale(1.1);
+    letter-spacing: 1.5px;
+    color: rgb(255, 255, 255);
+    width: 90px;
+    background-color: #0b5d7a;
+    box-shadow: 1px 1px 15px #0b5d7a;
+}
+
+
+
+
 .butoninput:hover {
     transform: scale(1.1);
     letter-spacing: 1.5px;
@@ -637,9 +685,10 @@ option {
     background-color: #ffffff;
     color: black;
 }
+/*Form Selesai
 
 
-
+/* Buat user list yang minjem */
 /* Card Box Katalog buku*/
 .bookatas {
     margin-top: 70px;
@@ -695,27 +744,26 @@ option {
 
 /*background card dengan font*/
 
-.book {
-    max-width: 300px;
+.user {
+    max-width: 250px;
     width: 100%;
     padding: 20px;
     border-radius: 10px;
     color: #ffffff;
-    background: rgba(34, 5, 69, 0.612);
+    background: rgba(43, 4, 93, 0.664);
     box-shadow: 7px 10px rgb(0, 0, 0);
     backdrop-filter: blur(3.2px);
     -webkit-backdrop-filter: blur(3.2px);
     transition: 1000ms;
 }
-
-.book img {
+.user img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
 
-.bookbuton {
+.userbuton {
     text-decoration: none;
     background-color: #441689;
     color: rgb(255, 255, 255);
@@ -727,13 +775,25 @@ option {
 }
 
 /*pseudo class card Animasi*/
+.user img:hover{
+    border: 2px solid #ffffff;
+}
 
-.bookbuton:hover {
+.user:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px rgb(255, 255, 255);
+}
+
+.userbuton:hover {
     background-color: #ffffff;
     color: #441689;
     letter-spacing: 1px;
     transform: scale(1.1);
 }
+
+
+
+
 
 
 /*profile*/
@@ -931,9 +991,6 @@ footer h2{
     .anggotainputan {
         display: flex;
         flex-direction: column;
-    }
-    .kiritransaksi {
-        display: none;
     }
 
     /*bagian profil*/
