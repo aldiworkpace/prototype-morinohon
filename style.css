@@ -367,15 +367,8 @@ buton:active {
 }
 
 
-/*about us description*/
-.Descripsion {
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-    padding: 10%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+
+
 
 /*Login form*/
 .boxformlogin {
@@ -490,6 +483,14 @@ buton:active {
     border: #354ea8;
     border: 1;
 }
+
+
+
+
+
+
+
+
 /*Form Pinjam buku*/
 /*box form pinjam buku transaksi*/
 .Boxtransaksi {
@@ -688,6 +689,12 @@ option {
 /*Form Selesai
 
 
+
+
+
+
+
+
 /* Buat user list yang minjem */
 /* Card Box Katalog buku*/
 .bookatas {
@@ -742,8 +749,8 @@ option {
     justify-content: center;
 }
 
-/*background card dengan font*/
-
+/*background card*/
+/*user aprov*/
 .user {
     max-width: 250px;
     width: 100%;
@@ -756,12 +763,36 @@ option {
     -webkit-backdrop-filter: blur(3.2px);
     transition: 1000ms;
 }
+/*nonaproveuser*/
+
+.nonaproveduser {
+    max-width: 250px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    background: rgba(79, 1, 50, 0.384);
+    box-shadow: 7px 10px rgb(0, 0, 0);
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(3.2px);
+    transition: 1000ms;
+}
+
+/*gambar user*/
+.nonaproveduser img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 .user img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
+
 
 .userbuton {
     text-decoration: none;
@@ -784,12 +815,23 @@ option {
     box-shadow: 0px 5px rgb(255, 255, 255);
 }
 
+.nonaproveduser img:hover{
+    border: 2px solid #ffffff;
+}
+
+.nonaproveduser:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px rgb(255, 255, 255);
+}
+
 .userbuton:hover {
     background-color: #ffffff;
     color: #441689;
     letter-spacing: 1px;
     transform: scale(1.1);
 }
+
+
 
 
 
@@ -917,6 +959,7 @@ option {
 
 
 
+
 /*footer bawah*/
 
 footer {
@@ -1001,6 +1044,10 @@ footer h2{
     .profilecardkanan {
         padding: 20px;
         margin-top: 0px;
+    }
+
+    .user {
+        max-width: 250px;
     }
 }
 
