@@ -12,5 +12,10 @@ function sembunyimenu() {
 }
 
 const form = document.getElementById('formpinjambuku');
+
+
+
 const nama = document.getElementById('nama');
 const email = document.getElementById('email');
+const judul = document.getElementById('judulbuku');
+const telepon = document.getElementById('telepon');
