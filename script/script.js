@@ -10,3 +10,7 @@ function sembunyimenu() {
     const menusam = document.querySelector('.menusamping')
     menusam.style.display = 'none'
 }
+
+const form = document.getElementById('formpinjambuku');
+const nama = document.getElementById('nama');
+const email = document.getElementById('email');
