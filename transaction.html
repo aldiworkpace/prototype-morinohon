@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <!--Nav dengan logo tag img dan ul dan li-->
+     <!--Nav dengan logo tag img dan ul dan li-->
     <header>
         <nav>
             <a href="#atas" class="boxlogo">
@@ -15,8 +15,8 @@
             </a>
             <ul>
                 <li><a href="index.html" class="hilangmenu">HOME</a></li>
-                <li><a href="katalog.html" class="hilangmenu">BOOK</a></li>
-                <li><a href="transaction.html" class="hilangmenu">BORROW BOOK</a></li>
+                <li><a href="katalog.html" class="hilangmenu">USER LIST</a></li>
+                <li><a href="transaction.html" class="hilangmenu">BORROW INPUT</a></li>
                 <li><a href="login.html" class="hilangmenu">LOGIN</a></li>
                 <li><a href="Profile.html" class="hilangmenu">PROFILE</a></li>
                 <li onclick=bukamenu()><a href="#"><img src="svg/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="open menu"></a></li>
@@ -24,8 +24,8 @@
             <ul class="menusamping">
                 <li onclick=sembunyimenu()><a href="#"><img src="svg/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="close"></a></li>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="katalog.html">BOOK</a></li>
-                <li><a href="transaction.html">BORROW BOOK</a></li>
+                <li><a href="katalog.html">USER LIST</a></li>
+                <li><a href="transaction.html">BORROW INPUT</a></li>
                 <li><a href="login.html">LOGIN</a></li>
                 <li><a href="Profile.html">PROFILE</a></li>
             </ul>
@@ -36,21 +36,73 @@
     <main>
         <section class="formtransaksi">
             <div class="Boxtransaksi">
+                
                 <div class="kiritransaksi">
-                    <H2>Halo Silahkan Isi Formnya</H2>
-                    <p>selamat membaca bukunya jangan lupa kembalikan setelah selesai,
-                        kalau kamu meminjam 2 buku salah satu jenisnya berbeda kamu bisa pilih option semua jenis,
-                        dia adalah salah satu kesatria hebat yang telah membaca banyak buku kamu mungkin bisa jadi salah satunya
-                    </p>    
-                </div>
+                    <h2>Update User</h2>    
+                    <p>Isi Untuk mengupdate status peminjam</p>
+                    <div class="inputan">   
+                        <div class="anggotainputan">
+                            <label for=" name"> Nama peminjam </label>
+                            <input class="inputnama" type="text" name="name" placeholder=" name ">    
+                        </div>
+                        <div class="anggotainputan">
+                            <label for=" email "> email </label>
+                            <input class="inputnama" type="email" name="email" placeholder=" email ">    
+                        </div>
+                    </div>    
+                        
+                        <label for="Denda">Denda</label><br>
+                            <select class="inputtrans" name="Denda" >
+                                <option value="" disabled selected hidden>Masukan Bila Anggota Melewati batas waktu....</option>
+                                <option>YA</option>
+                                <option>TIDAK</option>
+                            </select>
+
+                        <label for="Status">Status user</label><br>
+                        <select class="inputtrans" name="Jumlah Buku Dikembalikan" >
+                            <option value="" disabled selected hidden>Status User.....</option>
+                            <option>Aproved</option>
+                            <option>Non Aproved</option>
+                            <option>Blacklist</option>
+                        </select>
+
+
+                        <label for="status pinjam">Status Pinjam</label><br>
+                            <select class="inputtrans" name="status pinjam" >
+                                <option value="" disabled selected hidden>Status Pinjam</option>
+                                <option>Selesai</option>
+                                <option>Belum</option>
+                                <option>Melewati Batas</option>
+                        </select>
+
+                        <label for=" jumlah buku">Jumlah Buku Yang Telah Dikembalikan</label><br>
+                        <select class="inputtrans" name="Jumlah Buku Dikembalikan" >
+                            <option value="" disabled selected hidden>Jumlah buku dikembalikan....</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>Sudah Semua</option>
+                            <option>Belum Semua</option>
+                        </select>
+
+                        <div class="inputan">   
+                            <div class="anggotainputan">
+                                <input class="butoninputupdate" type="submit" name="submit" value="Update" >    
+                            </div>
+                            <div class="anggotainputan">
+                                <input class="butonresetupdate" type="reset" name="Reset" value="Reset">    
+                            </div>
+                        </div>  
+                    </div>
                 
                 <div class="kanantransaksi">
                     <form class="transaksi">
-                    <h2>Borrow Book</h2>    
-                    <p> Isi Form Berikut jika anda ingin meminjam Buku</p>
+                    <h2>Input Form</h2>    
+                    <p>Admin Form User Pinjam Buku</p>
                     <div class="inputan">   
                         <div class="anggotainputan">
-                            <label for=" name"> Masukan nama </label>
+                            <label for=" name"> Nama peminjam </label>
                             <input class="inputnama" type="text" name="name" placeholder=" name ">    
                         </div>
                         <div class="anggotainputan">
@@ -94,11 +146,10 @@
                                 <input class="dateinput" type="date" name=" Tanggal Kembali ">    
                             </div>
                         </div>  
-                        
-                        <input class="checkbox" type="checkbox" value="Remember Me"> i Agree all Privacy policy<br>
+        
                         <div class="inputan">   
                             <div class="anggotainputan">
-                                <input class="butoninput" type="submit" name="submit" value=" Submit " >    
+                                <input class="butoninput" type="submit" name="submit" value=" Setujui " >    
                             </div>
                             <div class="anggotainputan">
                                 <input class="butonreset" type="reset" name="Reset" value=" Reset ">    
