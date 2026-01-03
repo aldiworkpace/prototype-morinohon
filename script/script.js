@@ -23,10 +23,10 @@ function validasi() {
     let kembali = document.getElementById('tanggalkembali').value;
 
     if (nama === ""){
-        alert("Isi Dulu Namanya !")
+        alert("Isi Namanya dalam form pinjam !")
     } 
     else if (email === "") {
-        alert("isi Dulu emailnya")
+        alert("isi emailnya dalam form pinjam !")
     }
     else if (judul === "") {
         alert("isi Dulu judul bukunya")
