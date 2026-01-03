@@ -11,11 +11,46 @@ function sembunyimenu() {
     menusam.style.display = 'none'
 }
 
-const form = document.getElementById('formpinjambuku');
+function validasi() {
+    
+    let nama = document.getElementById('nama').value;
+    let email = document.getElementById('email').value;
+    let judul = document.getElementById('judulbuku').value;
+    let telepon = document.getElementById('telepon').value;
+
+    if (nama === ""){
+        alert("Isi Dulu Namanya ges !");
+    } 
+    else if (email === "") {
+        alert("isi dulu emailnya");
+    }
+    else if (judul === "") {
+        alert("isi dulu judul bukunya");
+    }
+    else if (telepon === "") {
+        alert("isi dulu nomor teleponnya");
+    }
+    else{
+        alert("Makasih");
+    }
+    
+}
 
 
+function validasi2() {
+    let namaupdate = document.getElementById('namaupdate').value;
+    let emailupdate = document.getElementById('emailupdate').value;
 
-const nama = document.getElementById('nama');
-const email = document.getElementById('email');
-const judul = document.getElementById('judulbuku');
-const telepon = document.getElementById('telepon');
+    if (namaupdate === ""){
+        alert("Masukan Nama Buat di Update");
+    }
+
+    else if (emailupdate === ""){
+        alert("Masukan email buat update");
+    }
+    else{
+        alert("Makasih ges");
+    }
+}
+
+    
