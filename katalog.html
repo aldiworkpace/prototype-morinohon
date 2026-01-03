@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-       <!--Nav dengan logo tag img dan ul dan li-->
+    <!--Nav dengan logo tag img dan ul dan li-->
     <header>
         <nav>
             <a href="#atas" class="boxlogo">
@@ -15,7 +15,6 @@
             </a>
             <ul>
                 <li><a href="index.html" class="hilangmenu">HOME</a></li>
-                <li><a href="katalog.html" class="hilangmenu">USER LIST</a></li>
                 <li><a href="transaction.html" class="hilangmenu">TRANSACTION</a></li>
                 <li><a href="login.html" class="hilangmenu">LOGIN</a></li>
                 <li><a href="Profile.html" class="hilangmenu">PROFILE</a></li>
@@ -24,23 +23,99 @@
             <ul class="menusamping">
                 <li onclick=sembunyimenu()><a href="#"><img src="svg/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="close"></a></li>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="katalog.html">USER LIST</a></li>
-                <li><a href="transaction.html">TRANSACTIOM</a></li>
+                <li><a href="transaction.html">TRANSACTION</a></li>
                 <li><a href="login.html">LOGIN</a></li>
                 <li><a href="Profile.html">PROFILE</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="dataatas">
-        <div class="dataatasbox">
-            <div class="datakananitem">
-                
-            </div>
+    <!---List transaksi mnggunakan tabel -->
+    <section class="listtranscation">
+        <h2>List Transaction List User</h2>
+        <div class="data">
+        <div class="boxtable">
+                <table>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Status User</th>
+                        <th>Jumlah Buku dipinjam</th>
+                        <th>Jumlah Buku dikembalikan</th>
+                        <th>Denda</th>
+                        <th>update</th>
+                    </tr>
+                    <tr>
+                        <td>User 1</td>
+                        <td>Approve</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>Tidak</td>
+                        <td><a class="tdbutton" href="transaction.html">Update</a></td>
+                    </tr>
+                    <tr>
+                        <td>User 2</td>
+                        <td>Approve</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>Tidak</td>
+                        <td><a class="tdbutton" href="transaction.html">Update</a></td>
+                    </tr>
+                    <tr>
+                        <td>User 3</td>
+                        <td>Approve</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>Tidak</td>
+                        <td><a class="tdbutton" href="transaction.html">Update</a></td>
+                    </tr>
+                    <tr>
+                        <td>User 4</td>
+                        <td>Non Approve</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>Tidak</td>
+                        <td><a class="tdbutton" href="transaction.html">Update</a></td>
+                    </tr>
+                    <tr>
+                        <td>User 5</td>
+                        <td>Non approve</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>Tidak</td>
+                        <td><a class="tdbutton" href="transaction.html">Update</a></td>
+                    </tr>
+                    <tr>
+                        <td>User 6</td>
+                        <td>Approve</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>Tidak</td>
+                       <td><a class="tdbutton" href="transaction.html">Update</a></td>
+                    </tr>
+                    <tr>
+                        <td>User 7</td>
+                        <td>Non Approve</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>Tidak</td>
+                       <td><a class="tdbutton" href="transaction.html">Update</a></td>
+                    </tr>
+                    <tr>
+                        <td>User 8</td>
+                        <td>Approve</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>Tidak</td>
+                        <td><a class="tdbutton" href="transaction.html">Update</a></td>
+                    </tr>
+                </table>
+        </div>
+        
+        <div class="diagram">
+            <div class="pie">70%</div>
+            <p>Penambahan anggota baru</p>
+        </div>
 
-            <div class="datakiriitem">
-                
-            </div>
         </div>
     </section>
 
@@ -49,7 +124,7 @@
         <div class="CardListKatalog">
             
            <div class="user">
-                <img src="images/user 1.jpg">
+                <img src="images/user.gif">
                 <h3>User 1</h3>
                 <ul type="none">
                     <li>Level | 9999++</li>
@@ -62,7 +137,7 @@
             </div>
 
             <div class="user">
-                <img src="images/user 2.jpg">
+                <img src="images/user.gif">
                 <h3>User 2</h3>
                 <ul type="none">
                     <li>Level | 9999++</li>
@@ -75,7 +150,7 @@
             </div>
 
             <div class="user">
-                <img src="images/user 3.jpg">
+                <img src="images/user.gif">
                 <h3>User 3</h3>
                 <ul type="none">
                     <li>Level | 9999++</li>
@@ -88,7 +163,7 @@
             </div>
 
             <div class="user">
-                <img src="images/user 4.jpg">
+                <img src="images/user.gif">
                 <h3>User 4</h3>
                 <ul type="none">
                     <li>Level | 9999++</li>
@@ -104,7 +179,7 @@
             <div class="CardListKatalog">
             
            <div class="nonaproveduser">
-                <img src="images/user 1.jpg">
+                <img src="images/user.gif">
                 <h3>User 5</h3>
                 <ul type="none">
                     <li>Level | 5</li>
@@ -117,7 +192,7 @@
             </div>
 
             <div class="nonaproveduser">
-                <img src="images/user 1.jpg">
+                <img src="images/user.gif">
                 <h3>User 6</h3>
                 <ul type="none">
                     <li>Level | 5</li>
@@ -130,7 +205,7 @@
             </div>
 
             <div class="nonaproveduser">
-                <img src="images/user 1.jpg">
+                <img src="images/user.gif">
                 <h3>User 7</h3>
                 <ul type="none">
                     <li>Level | 5</li>
@@ -143,7 +218,7 @@
             </div>
 
             <div class="nonaproveduser">
-                <img src="images/user 1.jpg">
+                <img src="images/user.gif">
                 <h3>User 8</h3>
                 <ul type="none">
                     <li>Level | 5</li>
