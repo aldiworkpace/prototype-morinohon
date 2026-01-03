@@ -41,13 +41,13 @@ function validasi() {
         alert("isi dulu nomor teleponnya")
     }
     else if (pinjam === ""){
-        alert("Pilih Dahulu jenisnya")
+        alert("Masukan Tanggal Pinjam Nya")
     }
     else if (kembali === ""){
-        alert("Pilih Dahulu jenisnya")
+        alert("Masukan Tanggal kembalinya")
     }
     else{
-        alert(" Makasih " + nama + " dan buku berjudul " + judul + " sudah masuk sistem kami ")
+        alert(" Makasih " + nama + " dan buku berjudul " + judul + " dan jenis " + jenis + " sudah masuk sistem kami ")
     }
     
 }
