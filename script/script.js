@@ -31,7 +31,7 @@ function validasi() {
         alert("isi dulu nomor teleponnya");
     }
     else{
-        alert("Makasih");
+        alert(" Makasih " + nama + " dan buku berjudul " + judul + " sudah masuk sistem kami ");
     }
     
 }
