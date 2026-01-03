@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="index.html" class="hilangmenu">HOME</a></li>
                 <li><a href="katalog.html" class="hilangmenu">USER LIST</a></li>
-                <li><a href="transaction.html" class="hilangmenu">BORROW INPUT</a></li>
+                <li><a href="transaction.html" class="hilangmenu">TRANSACTION</a></li>
                 <li><a href="login.html" class="hilangmenu">LOGIN</a></li>
                 <li><a href="Profile.html" class="hilangmenu">PROFILE</a></li>
                 <li onclick=bukamenu()><a href="#"><img src="svg/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="open menu"></a></li>
@@ -25,7 +25,7 @@
                 <li onclick=sembunyimenu()><a href="#"><img src="svg/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="close"></a></li>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="katalog.html">USER LIST</a></li>
-                <li><a href="transaction.html">BORROW INPUT</a></li>
+                <li><a href="transaction.html">TRANSACTION</a></li>
                 <li><a href="login.html">LOGIN</a></li>
                 <li><a href="Profile.html">PROFILE</a></li>
             </ul>
@@ -40,27 +40,27 @@
                 <form id="formpinjambuku" class="transaksi">
                 <div class="kiritransaksi">
                     <h2>Update User</h2>    
-                    <p>Isi Untuk mengupdate status peminjam</p>
+                    <p>Isi Untuk mengupdate status peminjam</p>  
                     <div class="inputan">   
                         <div class="anggotainputan">
                             <label for=" name"> Nama peminjam </label>
-                            <input id="nama" class="inputnama" type="text" name="name" required="name" placeholder="name">    
+                            <input id="namaupdate" class="inputnama" type="text" name="name" placeholder="name">    
                         </div>
                         <div class="anggotainputan">
                             <label for=" email "> email </label>
-                            <input id="email" class="inputnama" type="email" name="email" required="email" placeholder="email">    
+                            <input id="emailupdate" class="inputnama" type="email" name="email" placeholder="email">    
                         </div>
                     </div>    
                         
                         <label for="Denda">Denda</label><br>
-                            <select class="inputtrans" name="Denda" required="pilihitem">
+                            <select class="inputtrans" name="Denda">
                                 <option value="" disabled selected hidden>Masukan Bila Anggota Melewati batas waktu....</option>
                                 <option>YA</option>
                                 <option>TIDAK</option>
                             </select>
 
                         <label for="Status">Status user</label><br>
-                        <select class="inputtrans" name="Jumlah Buku Dikembalikan" required="pilihitem" >
+                        <select class="inputtrans" name="Jumlah Buku Dikembalikan" >
                             <option value="" disabled selected hidden>Status User.....</option>
                             <option>Aproved</option>
                             <option>Non Aproved</option>
@@ -69,7 +69,7 @@
 
 
                         <label for="status pinjam">Status Pinjam</label><br>
-                            <select class="inputtrans" name="status pinjam" required="pilihitem">
+                            <select class="inputtrans" name="status pinjam">
                                 <option value="" disabled selected hidden>Status Pinjam</option>
                                 <option>Selesai</option>
                                 <option>Belum</option>
@@ -77,7 +77,7 @@
                         </select>
 
                         <label for=" jumlah buku">Jumlah Buku Yang Telah Dikembalikan</label><br>
-                        <select class="inputtrans" name="Jumlah Buku Dikembalikan" required="pilihitem">
+                        <select class="inputtrans" name="Jumlah Buku Dikembalikan">
                             <option value="" disabled selected hidden>Jumlah buku dikembalikan....</option>
                             <option>1</option>
                             <option>2</option>
@@ -89,35 +89,36 @@
 
                         <div class="inputan">   
                             <div class="anggotainputan">
-                                <input class="butoninputupdate" type="submit" name="submit" value="Update" >    
+                                <input onclick="validasi2()" class="butoninputupdate" type="submit" name="submit" value="Update" >    
                             </div>
                             <div class="anggotainputan">
                                 <input class="butonresetupdate" type="reset" name="Reset" value="Reset">    
                             </div>
                         </div>  
                     </div>
+                   
                 </form>
 
                 <div class="kanantransaksi">
                     <form id="formpinjambuku" class="transaksi">
                     <h2>Input Form</h2>    
-                    <p>Admin Form User Pinjam Buku</p>
+                    <p>Form Untuk Peminjam Buku</p>
                     <div class="inputan">   
                         <div class="anggotainputan">
                             <label for="name"> Nama peminjam </label>
-                            <input id="nama" class="inputnama" type="text" name="name" required="name" placeholder="name">    
+                            <input id="nama" class="inputnama" type="text" name="name" placeholder="name">    
                         </div>
                         <div class="anggotainputan">
                             <label for=" email "> email </label>
-                            <input id="email" class="inputnama" type="email" name="email" required="email" placeholder=" email ">    
+                            <input id="email" class="inputnama" type="email" name="email" placeholder=" email ">    
                         </div>
                     </div>     
                         
                         <label for=" judul buku "> Judul buku </label><br>
-                        <input id="judulbuku" class="inputtrans" type="text" name="judul buku" required="inputini" placeholder=" judul buku ">
+                        <input id="judulbuku" class="inputtrans" type="text" name="judul buku" placeholder=" judul buku ">
                         
                         <label for=" jenis buku"> Jenis Buku </label><br>
-                        <select class="inputtrans" name="Jenis Buku" required="pilihitem">
+                        <select class="inputtrans" name="Jenis Buku">
                             <option value="" disabled selected hidden>Pilih jenis buku....</option>
                             <option>Semua Jenis</option>
                             <option>Fiksi</option>
@@ -127,7 +128,7 @@
                         </select>
 
                         <label for=" jumlah buku"> Jumlah Buku </label><br>
-                        <select class="inputtrans" name="Jumlah Buku" required="pilihitem">
+                        <select class="inputtrans" name="Jumlah Buku">
                             <option value="" disabled selected hidden>Pilih jumlah buku....</option>
                             <option>1</option>
                             <option>2</option>
@@ -141,17 +142,17 @@
                         <div class="inputan">   
                             <div class="anggotainputan">
                                 <label for="Tanggalpinjam"> Tanggal pinjam </label>
-                                <input class="dateinput" type="date" required="pilihitem" name="Tanggal pinjam">    
+                                <input class="dateinput" type="date" name="Tanggal pinjam">    
                             </div>
                             <div class="anggotainputan">
                                 <label for="Tanggalkembali"> Tanggal Kembali </label>
-                                <input class="dateinput" type="date" required="pilihitem" name="Tanggal Kembali">    
+                                <input class="dateinput" type="date" name="Tanggal Kembali">    
                             </div>
                         </div>  
-        
+                        
                         <div class="inputan">   
                             <div class="anggotainputan">
-                                <input class="butoninput" type="submit" name="submit" value=" Setujui " >    
+                                <input onclick="validasi()" class="butoninput" type="submit" name="submit" value=" Setujui " >    
                             </div>
                             <div class="anggotainputan">
                                 <input class="butonreset" type="reset" name="Reset" value=" Reset ">    
@@ -159,8 +160,10 @@
                         </div>  
                     </form>
                 </div>
-
             </div>
+            <div class="listpeminjam">
+                    list user
+                </div>
         </section>
     </main>
 
