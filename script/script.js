@@ -62,11 +62,11 @@ function validasi2() {
     let jumlahkembali = document.getElementById('jumlahkembali');
 
     if (namaupdate === ""){
-        alert("Masukan Nama Buat di Update")
+        alert("Masukan Nama user yang ingin di Update")
     }
 
     else if (emailupdate === ""){
-        alert("Masukan email buat update")
+        alert("Masukan email user yang ingin di update")
     }
 
     else if (denda === "") {
