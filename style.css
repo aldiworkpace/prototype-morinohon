@@ -497,11 +497,11 @@ buton:active {
 .Boxtransaksi {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     padding: 20px;
     min-height: 100vh;
-    
+    margin-bottom: 20px;
 }
 /*update user transaksi pinjam */
 .kiritransaksi {
@@ -536,7 +536,7 @@ buton:active {
 }
 
 .inputnama {
-    max-width: 300px;
+    max-width: 320px;
     width: 100%;
     padding: 10px 25px;
     border-radius: 20px;
@@ -736,7 +736,7 @@ option {
 
 .pie {
     flex: 1;
-    max-width: 250px;
+    max-width: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -840,7 +840,7 @@ th {
 /*background card*/
 /*user aprov*/
 .user {
-    max-width: 250px;
+    max-width: 260px;
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -854,7 +854,7 @@ th {
 /*nonaproveuser*/
 
 .nonaproveduser {
-    max-width: 250px;
+    max-width: 260px;
     width: 100%;
     padding: 20px;
     border-radius: 10px;
