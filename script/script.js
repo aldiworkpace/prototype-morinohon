@@ -23,13 +23,13 @@ function validasi() {
     let kembali = document.getElementById('tanggalkembali').value;
 
     if (nama === ""){
-        alert("Isi Dulu Namanya ges !")
+        alert("Isi Dulu Namanya !")
     } 
     else if (email === "") {
-        alert("isi dulu emailnya")
+        alert("isi Dulu emailnya")
     }
     else if (judul === "") {
-        alert("isi dulu judul bukunya")
+        alert("isi Dulu judul bukunya")
     }
     else if (jenis === ""){
         alert("Pilih Dahulu jenisnya")
@@ -38,7 +38,7 @@ function validasi() {
         alert("Masukan Jumlah Buku")
     }
     else if (telepon === "") {
-        alert("isi dulu nomor teleponnya")
+        alert("isi Dulu nomor teleponnya")
     }
     else if (pinjam === ""){
         alert("Masukan Tanggal Pinjam Nya")
@@ -47,7 +47,7 @@ function validasi() {
         alert("Masukan Tanggal kembalinya")
     }
     else{
-        alert(" Makasih " + nama + " dan buku berjudul " + judul + " dan jenis " + jenis + " sudah masuk sistem kami ")
+        alert(" Terimakasih " + nama + " dan buku berjudul " + judul + " dan jenis " + jenis + " sudah masuk sistem kami ")
     }
     
 }
@@ -56,6 +56,10 @@ function validasi() {
 function validasi2() {
     let namaupdate = document.getElementById('namaupdate').value;
     let emailupdate = document.getElementById('emailupdate').value;
+    let denda = document.getElementById('denda').value;
+    let userstatus = document.getElementById('userstatus');
+    let statuspinjam = document.getElementById('statuspinjam');
+    let jumlahkembali = document.getElementById('jumlahkembali');
 
     if (namaupdate === ""){
         alert("Masukan Nama Buat di Update")
@@ -65,7 +69,7 @@ function validasi2() {
         alert("Masukan email buat update")
     }
     else{
-        alert("Makasih ges")
+        alert("Update User Berhasil !")
     }
 }
 
