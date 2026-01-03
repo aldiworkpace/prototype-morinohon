@@ -96,7 +96,7 @@ li img:hover{
 
 /*Background body*/
 body {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/download\ \(6\).gif');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/download\ \(6\).gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -692,30 +692,63 @@ option {
 
 
 /* Buat user list yang minjem */
-.dataatas {
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
-.dataatasbox {
+.data {
+    margin-top: 20px;
+    padding: 10px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
 }
 
-.datakananitem {
+.boxtable {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.datakiriitem {
-
-}
-
-.datakiriitem, .datakananitem {
+.diagram {
     flex: 1;
 }
+
+table {
+    color: #ffffff;
+    border-collapse: collapse;
+    width: 100%;
+    background: rgba(156, 164, 205, 0.104);
+    border-radius: 13px;
+    box-shadow: 11px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(19.2px);
+    -webkit-backdrop-filter: blur(19.2px);
+}
+
+th, td {
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tdbutton{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #441689;
+}
+
+th {
+    background-color: rgba(45, 11, 86, 0.219);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 20px 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
 
 
 .CardBoxKatalog {
@@ -960,11 +993,10 @@ footer {
     color: #ffffff;
     text-align: center;
     font-weight: bolder;
-    background: rgba(60, 6, 84, 0.32);
-    border-radius: 7px;
+    background: rgba(140, 106, 181, 0.311);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(3.2px);
 }
 
 footer h2{
@@ -1040,6 +1072,16 @@ footer h2{
 
     .user {
         max-width: 250px;
+    }
+
+    /*table*/
+    table {
+        max-width: 400px;
+        table-layout: fixed;
+    }
+
+    td {
+        flex-direction: column;
     }
 }
 
