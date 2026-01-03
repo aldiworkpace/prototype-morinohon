@@ -19,6 +19,8 @@ function validasi() {
     let telepon = document.getElementById('telepon').value;
     let jenis = document.getElementById('jenisbuku').value;
     let jumlahbuku = document.getElementById('jumlahbuku').value;
+    let pinjam = document.getElementById('tanggalpinjam').value;
+    let kembali = document.getElementById('tanggalkembali').value;
 
     if (nama === ""){
         alert("Isi Dulu Namanya ges !")
@@ -37,6 +39,12 @@ function validasi() {
     }
     else if (telepon === "") {
         alert("isi dulu nomor teleponnya")
+    }
+    else if (pinjam === ""){
+        alert("Pilih Dahulu jenisnya")
+    }
+    else if (kembali === ""){
+        alert("Pilih Dahulu jenisnya")
     }
     else{
         alert(" Makasih " + nama + " dan buku berjudul " + judul + " sudah masuk sistem kami ")
