@@ -68,6 +68,19 @@ function validasi2() {
     else if (emailupdate === ""){
         alert("Masukan email buat update")
     }
+
+    else if (denda === "") {
+        alert('Update denda pada user bila melewati batas peminjaman')
+    }
+    else if (statuspinjam === "") {
+        alert('Update Status peminjaman pada user')
+    }
+    else if (userstatus === "") {
+        alert('Update status user aprove atau tidak')
+    }
+    else if (jumlahkembali  === "") {
+        alert('update jumlah buku yang kembali keperpustakaan')
+    }
     else{
         alert("Update User Berhasil !")
     }
