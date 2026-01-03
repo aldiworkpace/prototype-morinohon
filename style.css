@@ -109,6 +109,7 @@ body {
 
 .FrontHomeBox {
     margin-top: 20px;
+    margin-bottom: 30px;
     width: 90%;
     max-width: 600px;
     min-height: 350px;
@@ -177,7 +178,7 @@ buton:active {
 
 /*Bagian headline*/
 .headline{
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 15px;
     padding: 20px 20px;
 }
@@ -500,15 +501,12 @@ buton:active {
     flex-wrap: wrap;
     padding: 20px;
     min-height: 100vh;
-    margin-bottom: 50px;
     
 }
 /*update user transaksi pinjam */
 .kiritransaksi {
     color: #ffffff;
-    min-height: 487px;
-    gap: 25px;
-    width: 500px;
+    max-width: 500px;
     padding: 25px 30px;
     border-radius: 15px 60px ;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('images/download\ \(7\).gif');
@@ -516,14 +514,10 @@ buton:active {
 }
 /*form transaksi pinjam buku input*/
 .kanantransaksi {
-    color: #ffffff;
-    min-height: 400px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    color: white;
     width: 500px;
     padding: 25px 30px;
-   background: rgba(31, 8, 53, 0.392);
+    background: rgba(31, 8, 53, 0.392);
     border-radius: 15px 60px ;
     box-shadow: 11px 15px rgba(0, 0, 0, 0.47);
     backdrop-filter: blur(12.2px);
@@ -550,6 +544,7 @@ buton:active {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
+    transition: 100ms;
 }
 
 .dateinput {
@@ -579,6 +574,7 @@ buton:active {
 }
 
 /*buat form update*/
+
 .butoninputupdate {
     width: 80px;
     padding: 7px;
@@ -696,12 +692,11 @@ option {
 
 
 /* Buat user list yang minjem */
-/* Card Box Katalog buku*/
-.bookatas {
+.dataatas {
     margin-top: 70px;
     margin-bottom: 70px;
 }
-.bookatasbox {
+.dataatasbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -709,21 +704,16 @@ option {
     padding: 20px;
 }
 
-.bookkananitem {
+.datakananitem {
     display: flex;
     justify-content: center;
 }
 
-.bookkananitem img{
-    border-radius: 20px;
-    height: 300px;
-}
-
-.bookkiriitem {
+.datakiriitem {
 
 }
 
-.bookkiriitem, .bookkananitem {
+.datakiriitem, .datakananitem {
     flex: 1;
 }
 
@@ -970,12 +960,11 @@ footer {
     color: #ffffff;
     text-align: center;
     font-weight: bolder;
-    background: rgba(133, 140, 177, 0.32);
+    background: rgba(60, 6, 84, 0.32);
     border-radius: 7px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(163, 246, 237, 0.3);  
 }
 
 footer h2{
@@ -1001,13 +990,16 @@ footer h2{
         width: 100%;       
         padding: 15px;     
         margin-top: 50px; 
+        margin-bottom: 10px;
     }
     .FrontHome h1 {
         font-size: 40px;  
     }
    
     .headline {
-    font-size: 17px;
+    margin-top: 10px;    
+    font-size: 15px;
+
    }
 
    /*home bagian desc pake gambar*/
