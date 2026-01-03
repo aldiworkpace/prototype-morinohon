@@ -96,7 +96,7 @@ li img:hover{
 
 /*Background body*/
 body {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/download\ \(6\).gif');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/download\ \(6\).gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -599,6 +599,17 @@ buton:active {
     transition: 180ms;
 }
 
+.butonuserlist {
+    width: 80px;
+    padding: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0b5c7a62;
+    border: none;
+    font-weight: bold
+}
+
 /*buat form input pinjam*/
 .butoninput {
     width: 80px;
@@ -692,14 +703,57 @@ option {
 
 
 /* Buat user list yang minjem */
+.listtranscation {
+    text-align: center;
+    color: white;
+}
+
+
 .data {
-    margin-top: 20px;
+    margin-top: 2px;
     padding: 10px 30px;
+    gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
+
+.diagram {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    padding: 10px 20px;
+    border-radius: 10px 40px;
+    background: rgba(156, 164, 205, 0.104);
+    box-shadow: 11px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(19.2px);
+    -webkit-backdrop-filter: blur(19.2px);
+}
+
+.pie {
+    flex: 1;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image:radial-gradient(
+     #15011dee 40%,
+     transparent 0% 70%
+    ),conic-gradient(from 30deg, #6b6bdb 60%, #adababe9 30%);
+    transition: 1000ms;
+}
+
+.headdata {
+    text-align: center;
+}
+
+/*table*/
 
 .boxtable {
     display: flex;
@@ -707,10 +761,6 @@ option {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
-}
-
-.diagram {
-    flex: 1;
 }
 
 table {
@@ -738,6 +788,7 @@ th, td {
     border-radius: 10px;
     font-size: 15px;
     background-color: #441689;
+    transition: 500ms;
 }
 
 th {
@@ -749,6 +800,20 @@ th {
     color: #ffffff;
 }
 
+.tdbutton:hover {
+    transform: scale(1.1);
+    background-color: white;
+    letter-spacing: 2px;
+    color: #441689;
+}
+
+.pie:hover {
+    transform: scale(1.1);
+    background-image:radial-gradient(
+     #343434 40%,
+     transparent 0% 70%
+    ),conic-gradient(from 30deg, #6b6bdb 90%, #adababe9 30%);
+}
 
 
 .CardBoxKatalog {
