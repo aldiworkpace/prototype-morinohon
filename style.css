@@ -371,7 +371,7 @@ buton:active {
 
 
 
-/*Login form*/
+/*Login form sign up*/
 .boxformlogin {
     flex-direction: column;
     display: flex;
@@ -703,7 +703,7 @@ option {
 
 
 /* Buat user list yang minjem */
-.listtranscation {
+.listtranscation h2{
     text-align: center;
     color: white;
 }
@@ -815,7 +815,7 @@ th {
     ),conic-gradient(from 30deg, #6b6bdb 90%, #adababe9 30%);
 }
 
-
+/*list user*/
 .CardBoxKatalog {
     margin-bottom: 100px;
 }
@@ -931,12 +931,12 @@ th {
 .boxprofilecard {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     padding: 20px;
     min-height: 100vh;
-    margin-bottom: 50px;
-    
+    margin-top: 50px;
+    margin-bottom: 50px; 
 }
 
 .profilecardkanan {
