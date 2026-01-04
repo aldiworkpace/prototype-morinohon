@@ -11,6 +11,8 @@ function sembunyimenu() {
     menusam.style.display = 'none'
 }
 
+
+//Fom validasi pinjam//
 function validasi() {
     
     let nama = document.getElementById('nama').value;
@@ -53,13 +55,15 @@ function validasi() {
 }
 
 
+//form validasi update user//
+
 function validasi2() {
     let namaupdate = document.getElementById('namaupdate').value;
     let emailupdate = document.getElementById('emailupdate').value;
     let denda = document.getElementById('denda').value;
-    let userstatus = document.getElementById('userstatus');
-    let statuspinjam = document.getElementById('statuspinjam');
-    let jumlahkembali = document.getElementById('jumlahkembali');
+    let userstatus = document.getElementById('userstatus').value;
+    let statuspinjam = document.getElementById('statuspinjam').value;
+    let jumlahkembali = document.getElementById('jumlahkembali').value;
 
     if (namaupdate === ""){
         alert("Masukan Nama user yang ingin di Update")
