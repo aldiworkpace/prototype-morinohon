@@ -222,7 +222,7 @@ buton:active {
     backdrop-filter: blur(3.2px);
     -webkit-backdrop-filter: blur(3.2px);
     border: 1px solid rgba(221, 115, 165, 0.28);
-    transition: 1000ms;
+    transition: 500ms;
 }
 
 .card img {
